@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER | Histórico de Auditoria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <div class="site-logo"><h1>AETHER</h1><span>Resiliência de Dados Terrestres</span></div>
+            <nav class="main-navigation" aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="problema.html">Problema</a></li>
+                    <li><a href="tecnologia.html">Tecnologia</a></li>
+                    <li><a href="objetivos.html">Objetivos e Público</a></li>
+                    <li><a href="beneficios.html">Benefícios e Prática</a></li>
+                    <li><a href="logs.html" class="active" aria-current="page">Auditoria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+        <header class="page-header">
+            <h2>Painel de Auditoria e Logs</h2>
+            <p>Tabela de monitoramento simulada de eventos de conectividade.</p>
+        </header>
+
+        <section class="audit-panel" aria-label="Tabela de Eventos de Rede">
+            <table class="audit-table">
+                <thead>
+                    <tr>
+                        <th>Hora UTC</th>
+                        <th>Nó Sensor</th>
+                        <th>Status</th>
+                        <th>Descrição Técnica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14:22:10</td>
+                        <td>AETHER_01</td>
+                        <td><span class="status-badge badge-ok">NOMINAL</span></td>
+                        <td>Dados de temperatura capturados e salvos no servidor principal.</td>
+                    </tr>
+                    <tr>
+                        <td>14:25:30</td>
+                        <td>AETHER_04</td>
+                        <td><span class="status-badge badge-warn">ALERTA</span></td>
+                        <td>Queda de sinal primário detectada. Iniciando contagem de Timeout.</td>
+                    </tr>
+                    <tr>
+                        <td>14:26:00</td>
+                        <td>AETHER_04</td>
+                        <td><span class="status-badge badge-crit">ISOLAMENTO</span></td>
+                        <td>Conexão perdida. Transição efetuada: ativando armazenamento interno seguro.</td>
+                    </tr>
+                    <tr>
+                        <td>15:05:22</td>
+                        <td>AETHER_04</td>
+                        <td><span class="status-badge badge-info">RECOVERY</span></td>
+                        <td>Sinal restabelecido. Injetando dados retidos na base de dados principal.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <p class="footer-team">Desenvolvido por: Arthur Sgarbi (RM 569774), Bruno Bastos (RM 569434) Pedro Oliveira (RM 572468)</p>
+        <p>Engenharia de Software — FIAP</p>
+    </footer>
+
+</body>
+</html>
